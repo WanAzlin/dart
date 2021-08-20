@@ -1,0 +1,147 @@
+void main() {
+
+ printName(){
+   print('Azlin');
+ }
+  
+  printName();
+  
+  
+}
+======================
+
+List<String> nameList = ['Adik', 'Oyen', 'Abat'];
+  
+    print(nameList[0]);
+    print(nameList[1]);
+    print(nameList[2]);
+
+======================
+
+
+void main() {
+  
+  
+  List<String> nameList = ['Adik', 'Oyen', 'Abat'];
+  
+
+ printName(int index){
+   print(nameList[index]);
+ }
+  
+  printName(0);
+  
+  
+}
+
+==============================
+
+void main() {
+  
+  
+  List<String> nameList = ['Adik', 'Oyen', 'Abat'];
+  
+
+ printName(String name){
+   print(name);
+ }
+  
+  printName(nameList[0]);
+  printName(nameList[1]);
+  printName(nameList[2]);
+}
+==============================
+//check if list is empty
+void main() {
+  
+  
+  List<String> nameList = ['Adik', 'Oyen', 'Abat'];
+  
+
+ printName(String name){
+   print(name);
+ }
+  
+  print(nameList.isEmpty);
+}
+=============================
+
+void main() {
+  
+  
+  List<String> nameList = ['Adik', 'Oyen', 'Abat'];
+  
+
+ printName(String name){
+   print(name);
+ }
+  
+ nameList.forEach(printName);
+}
+==============================
+
+void main() {
+  
+  
+  List<Object> nameList = ['Adik', 'Oyen', 'Abat'];
+  
+
+ printName(Object name){
+   print(name);
+ }
+  
+ nameList.forEach(printName);
+}
+=================================
+//anonymous function
+void main() {
+  
+  
+  List<Object> nameList = ['Adik', 'Oyen', 'Abat'];
+  
+   nameList.forEach((e){
+   print(e);
+ });
+}
+
+========================================
+//parameter
+
+void main() {
+  
+  
+  List<String> nameList = ['Adik', 'Oyen', 'Abat'];
+  
+  printDetails(String name){
+    print('The Cat name is $name');
+    
+  }
+  
+  nameList.forEach(printDetails);
+}
+=========================================
+#advanced parameters with Map 
+void main() {
+  
+  
+  List<String> nameList = ['Adik', 'Oyen', 'Abat'];
+  
+  List<Map<String,Object>> catList = [
+    {'name': 'Oyen', 'age': 20},
+    {'name': 'Adik', 'age': 19},
+    {'name': 'Abat', 'age': 18},
+  ];
+  
+  printDetails(String name, int age){
+  
+    print('The Cat name is $name');
+    print('The Cat name is $age');  
+  }
+  
+ // nameList.forEach(printDetails);
+  
+  catList.forEach((e){
+    printDetails(e['name'] as String,e['age'] as int);
+  });
+}
+

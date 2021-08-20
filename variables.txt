@@ -1,0 +1,130 @@
+void main() {
+  
+  var name = "Azlin";
+  print(name);
+}
+
+output : Azlin
+
+=============================
+
+void main() {
+  
+  var name = "Azlin";
+  name = "newName";
+  print(name);
+}
+ 
+output : newName
+
+===============================
+
+void main() {
+  
+  Object name = 2; //obj is dynamic
+  name = "Azlin";
+
+  print(name);
+}
+
+output : Azlin
+
+===========================
+
+void main() {
+  
+  dynamic name = "Azlin";
+  name = 2;
+
+  print(name);
+}
+
+output: 2
+
+==============================
+
+  var a = 'a';
+ // Data type x boleh diubah
+ // data type daripada first assignment
+  
+  String name = 'azlin';
+// Data type x boleh diubah
+// data type daripada apa yang kita assign
+  dynamic variable = 'dynamic';
+  Object anotherVariable = 2;
+// Data type x boleh diubah
+// data type adalah jenis dynamic/obj
+
+=======================================
+
+void main() {
+  
+ int count = 0; //count should be for numbers
+ double mark = 2.0;
+ print(mark);
+  
+}
+
+======================================
+
+bool available = true;
+
+=====================================
+
+
+ List name = ['adik','oyen'];
+ print(name);
+
+==================================
+
+ List<String> name = ['adik','oyen'];
+ print(name);
+ ===================================
+
+ Set cat = {'Adik','Oyen'}; 
+ print(cat);
+
+==================================
+
+
+  Map wan = {
+    'name': 'Adik',
+    'age' : 20
+  };
+  
+  print(wan['name']);
+ ====================================
+
+  Map<String, Object> wan = {
+    'name': 'Adik',
+    'age' : 20
+  };
+  
+  print(wan['name']);
+
+===================================
+
+ const String data = "2123.2";
+ 
+Object date = DateTime.now();//runtime
+  
+ 
+  print(date);
+
+====================================
+
+List<String> name = ['adik','oyen'];
+
+ name = ['oyen','abat'];
+ print(name[0]);
+
+==========================
+
+// tak boleh ubah value dgn const
+
+  
+const List<String> name = ['adik','oyen'];
+
+ name[1] = 'abat';
+ print(name[1]);
+====================================

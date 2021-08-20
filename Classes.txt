@@ -1,0 +1,460 @@
+void main() {
+ 
+  String name = 'Azlin';
+  Person person = new Person('Azlin', 20);
+  print(person.name);
+  print(person.age);
+  
+  
+}
+ class Person{
+    String name = 'Azlin';
+    int age = 20;
+   
+   Person(name, age);
+  }
+
+======================
+void main() {
+ 
+  String name = 'Azlin';
+  Person person1 = new Person('Adik', 20);
+  Person person2 = new Person('Alin', 19);
+  Person person3 = new Person('Oyen', 18);
+  print(person1.name);
+  print(person1.age);
+  print(person2.name);
+  print(person2.age);
+  print(person3.name);
+  print(person3.age);
+  
+  
+}
+ class Person{
+    String name = 'Azlin';
+    int age = 20;
+   
+   Person(String newName, int newAge){
+     name = newName;
+     age = newAge;
+     
+   }
+  }
+==========================================
+
+void main() {
+ 
+  String name = 'Azlin';
+  Person person1 = new Person('Adik', 20);
+  Person person2 = new Person('Alin', 19);
+  Person person3 = new Person('Oyen',);
+  print(person1.name);
+  print(person1.age);
+  print(person2.name);
+  print(person2.age);
+  print(person3.name);
+  print(person3.age);
+  
+  
+}
+ class Person{
+    String? name;
+    int? age;
+   
+   Person(String newName, [int? newAge]){
+     name = newName;
+     age = newAge;
+     
+   }
+  }
+
+===========================================
+void main() {
+ 
+  String name = 'Azlin';
+  Person person1 = new Person('Adik', 20);
+  Person person2 = new Person('Alin', 19);
+  Person person3 = new Person('Oyen',);
+  print(person1.printDetails());
+  print(person2.printDetails());
+  print(person3.printDetails());
+  
+  
+}
+ class Person{
+    String? name;
+    int? age;
+   
+   Person(String newName, [int? newAge]){
+     name = newName;
+     age = newAge;
+     
+   }
+   
+   printDetails(){
+     print(name);
+     print(age);
+   }
+   
+  }
+
+========================================================
+void main() {
+ 
+  String name = 'Azlin';
+ 
+
+  List<Person> person = [
+    Person('Ahmad', 20),
+    Person('Ali',19),
+    Person('Oyen')
+  ];
+  
+  person.forEach((person){
+    person.printDetails();
+  });
+}
+ class Person{
+    String? name;
+    int? age;
+   
+   Person(String newName, [int? newAge]){
+     name = newName;
+     age = newAge;
+     
+   }
+   
+   printDetails(){
+     print('The student name is $name');
+     print('His age is $age');
+   }
+   
+  }
+==================================
+//if the data is not null
+
+void main() {
+ 
+  String name = 'Azlin';
+ 
+
+  List<Person> person = [
+    Person('Ahmad', 20),
+    Person('Ali',19),
+    Person('Oyen')
+  ];
+  
+  person.forEach((person){
+    person.printDetails();
+  });
+}
+ class Person{
+    String? name;
+    int? age;
+   
+   Person(String newName, [int? newAge]){
+     name = newName;
+     age = newAge;
+     
+   }
+   
+   printDetails(){
+     print('The student name is $name');
+     if(age != null){
+       print('His age is $age');
+   }
+     }
+     
+   
+  }
+
+===============================================
+void main() {
+ 
+  String name = 'Azlin';
+ 
+
+  List<Person> person = [
+    Person('Ahmad', 20),
+    Person('Ali',19),
+    Person('Oyen')
+  ];
+  
+  person.forEach((person){
+    person.printDetails();
+  });
+}
+ class Person{
+    String? name;
+    int? age;
+   
+   Person(String newName, [int? newAge]){
+     name = newName;
+     age = newAge;
+     
+   }
+   
+   printDetails(){
+     print('The student name is $name');
+     if(age != null){
+       print('His age is $age');
+   } else {
+       print('He doesn\'t have age');
+     }
+     
+     
+     }
+     
+   
+  }
+
+============================================
+//using for loops
+
+void main() {
+ 
+  String name = 'Azlin';
+ 
+
+  List<Person> person = [
+    Person('Ahmad', 20),
+    Person('Ali',19),
+    Person('Oyen')
+  ];
+  
+ // person.forEach((person){
+  //  person.printDetails();
+ // });
+  
+  for(int i = 0;i<person.length; i++){
+    person[i].printDetails();
+  }
+    
+}
+ class Person{
+    String? name;
+    int? age;
+   
+   Person(String newName, [int? newAge]){
+     name = newName;
+     age = newAge;
+     
+   }
+   
+   printDetails(){
+     print('The student name is $name');
+     if(age != null){
+       print('His age is $age');
+   } else {
+       print('He doesn\'t have age');
+     }
+     
+     
+     }
+     
+   
+  }
+==================================================
+
+void main() {
+ 
+  String name = 'Azlin';
+ 
+  
+  
+  calculate(){
+    int result = 1 + 1;
+    return result;
+  }
+  
+  int value = calculate();
+  
+  print(value);
+
+  List<Person> person = [
+    Person('Adik', 20),
+    Person('Alin',19),
+    Person('Oyen')
+  ];
+  
+ // person.forEach((person){
+  //  person.printDetails();
+ // });
+  
+  for(int i = 0;i<person.length; i++){
+    person[i].printDetails();
+  }
+    
+}
+ class Person{
+    String? name;
+    int? age;
+   
+   Person(String newName, [int? newAge]){
+     name = newName;
+     age = newAge;
+     
+   }
+   
+   printDetails(){
+     print('The student name is $name');
+     if(age != null){
+       print('His age is $age');
+   } else {
+       print('He doesn\'t have age');
+     }
+     
+     
+     }
+     
+   
+  }
+================================
+//to pass more than one value 
+
+calculate(){
+    int result = 1 + 1;
+    return [1,2];
+  }
+  
+  Object value = calculate();
+  
+  print(value);
+
+======================================
+//named parameter
+
+ Person({this.name, this.age});
+=================================
+//positioning parameter
+ 
+Person(String newName, [int? newAge]){
+     name = newName;
+     age = newAge;
+     
+   }
+
+==================================
+//optional parameter
+void main() {
+ 
+  String name = 'Azlin';
+ 
+  
+  
+  calculate(){
+    int result = 1 + 1;
+    return [1,2];
+  }
+  
+  Object value = calculate();
+  
+  print(value);
+
+  List<Person> person = [
+    Person(newName:'Adik',newAge: 20),
+    Person(newName:'Alin',newAge:19),
+    Person(newName:'Oyen')
+  ];
+  
+ // person.forEach((person){
+  //  person.printDetails();
+ // });
+  
+  for(int i = 0;i<person.length; i++){
+    person[i].printDetails();
+  }
+    
+}
+ class Person{
+    String? name;
+    int? age;
+   
+   Person({String? newName, int? newAge}){
+     name = newName;
+     age = newAge;
+     
+   }
+   
+   printDetails(){
+     print('The student name is $name');
+     if(age != null){
+       print('His age is $age');
+   } else {
+       print('He doesn\'t have age');
+     }
+     
+     
+     }
+     
+   
+  }
+================================
+//try codeblocks
+
+try{
+        print('The student name is $name');
+     if(age != null){
+       print('His age is $age');
+   } else {
+       print('He doesn\'t have age');
+     }
+==========================================
+
+void main() {
+ 
+  String name = 'Azlin';
+ 
+  
+  
+  calculate(){
+    int result = 1 + 1;
+    return [1,2];
+  }
+  
+  Object value = calculate();
+  
+  print(value);
+
+  List<Person> person = [
+    Person(name:'Adik',age: 20),
+    Person(name:'Alin',age:19),
+    Person(name:'Oyen')
+  ];
+  
+ // person.forEach((person){
+  //  person.printDetails();
+ // });
+  
+  for(int i = 0;i<person.length; i++){
+    person[i].printDetails();
+  }
+    
+}
+ class Person{
+    String? name;
+    int? age;
+   
+   Person({required this.name,  this.age});
+   
+   printDetails(){
+    
+     try{
+        print('The student name is $name');
+        if(age == null){
+         print('His age is $age');
+        } else {
+          throw('This person\'t doesn\'t have age');
+        }
+     
+     }
+     catch(e){
+       
+       print(e);
+     }
+     
+     
+ }
+     
+   
+  }
